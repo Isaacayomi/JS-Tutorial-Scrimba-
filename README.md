@@ -7,7 +7,4 @@
 - Learnt how to use the onclick event, and also wrote my first function
 - Learnt about the String data type
 - Built a passenger timer app as the final project for this first lesson
-=======
-- Created a variable also used the console.log() tool
-- Learnt the basic mathematical calculator
-- Built a passenger timer app as the final project. 
+ 
