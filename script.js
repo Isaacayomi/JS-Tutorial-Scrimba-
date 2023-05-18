@@ -95,14 +95,14 @@ let lap3 = 36;
 // INCREMENT AND DECREMENT ON CLICK FOR THE SUBWAY COUNTER APP (1ST PROJECT)
 let count = 0;
 function increment(){
-    count = count + 1;
+    count += 1;
     document.getElementById("count-el").innerText = count;
     // console.log(count);
 }
 
 
 function decrement(){
-    count = count - 1;
+    count -= 1;
     document.getElementById("count-el").innerText = count;
     // console.log(count);
 }
@@ -113,9 +113,35 @@ function save(){
 }
 
 
-
 // QUICK EXPLANATION ABOUT DOM (Dcoument Object Model)
 // It's just how you use javascript to modify a website
+
+
+// STRINGS
+// String is a data type used to store string variables, and it's always stored in either a double quotes or a single quotes e.g "Prime" or 'Prime'
+// let message = "You have three new notifications"
+// console.log(message);
+
+// String concantenation is basically adding two strings together to make it a whole string.
+// let firstName = "prime";
+// let secName = "Prime";
+
+// let fullName = firstName + " " + secName;
+// console.log(fullName);
+
+// let welcomeEl = document.getElementById("welcome-el");
+// let name = "Prime";
+// let greetings = "Welcome "
+
+// welcomeEl.innerText = greetings + name;
+
+
+
+
+
+
+
+
 
 
 
