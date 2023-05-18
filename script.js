@@ -107,10 +107,12 @@ function decrement(){
     // console.log(count);
 }
 
-// CREATE A FUNCTION, save(), which logs out the count when it's called
-function save(){
-    console.log(count);
-}
+
+
+// let saveEl = document.getElementById("save-el");
+// let dashCount = count + " - ";
+// saveEl.innerText = dashCount;
+
 
 
 // QUICK EXPLANATION ABOUT DOM (Dcoument Object Model)
