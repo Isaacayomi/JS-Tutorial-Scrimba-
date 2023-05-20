@@ -104,14 +104,18 @@ function decrement(){
     document.getElementById("count-el").innerText = count;
 }
 
-function save(){
-    
-}
-
 function clearVal(){
     count = 0;
     document.getElementById("count-el").innerText = count;
 }
+
+let saveEl = document.getElementById("count-el").innerText
+function save(){
+    saveEl = count;
+    document.getElementById("save-el").innerText = "Previous entries:" + saveEl;
+
+}
+
 
 
 
