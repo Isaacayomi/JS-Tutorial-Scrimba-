@@ -95,13 +95,19 @@ let lap3 = 36;
 // INCREMENT AND DECREMENT ON CLICK FOR THE SUBWAY COUNTER APP (1ST PROJECT)
 let count = 0;
 function increment(){
-    count += 1;
+    count ++;
     document.getElementById("count-el").innerText = count;
 }
 
 function decrement(){
-    count -= 1;
+    count --;
     document.getElementById("count-el").innerText = count;
+}
+
+let saveEl = document.getElementById("save-el");
+function save(){
+    let dashCount = count + " - ";
+    saveEl.innerText += dashCount;
 }
 
 function clearVal(){
@@ -109,20 +115,16 @@ function clearVal(){
     document.getElementById("count-el").innerText = count;
 }
 
-let saveEl = document.getElementById("count-el").innerText
-function save(){
-    saveEl = count;
-    document.getElementById("save-el").innerText = "Previous entries:" + saveEl;
-
-}
 
 
 
+// let saveEl = document.getElementById("count-el").innerText
+// function save(){
+//     saveEl = count;
+//     document.getElementById("save-el").innerText = "Previous entries:" + saveEl;
 
+// }
 
-// let saveEl = document.getElementById("save-el");
-// let dashCount = count + " - ";
-// saveEl.innerText = dashCount;
 
 
 
@@ -147,15 +149,3 @@ function save(){
 // let greetings = "Welcome "
 
 // welcomeEl.innerText = greetings + name;
-
-
-
-
-
-
-
-
-
-
-
-
