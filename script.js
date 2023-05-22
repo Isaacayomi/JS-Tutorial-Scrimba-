@@ -1,4 +1,4 @@
-// // BASIC LESSONS LEARNT BEFORE PROJECT
+// // BASIC LESSONS LEARNT BEFORE PROJECT 1 (PASSENGER COUNTER APP)
 
 // // 1. Create a variable called myAge and set it's value to my age
 // let myAge = 12;
@@ -14,6 +14,7 @@
 // // 2. Multiply the two together and store the result in myDogAge
 // let myDogAge = newAge * humanDogRatio;
 // console.log(myDogAge);
+
 
 // // REASSIGNING AND INCREMENT
 // let count = 12;
@@ -51,6 +52,7 @@
 // console.log("HI there")
 // }
 
+
 // WRITING YOUR FIRST FUNCTION
 // create a function that logs out the number 42 to the console, call or invoke the function
 
@@ -64,9 +66,9 @@
 
 // NEW TASK USING FUNCTION
 // Create a function that logs out the sum of all the lap times
-let lap1 = 34;
-let lap2 = 33;
-let lap3 = 36;
+// let lap1 = 34;
+// let lap2 = 33;
+// let lap3 = 36;
 
 // SOLUTION
 // function lapTime(){
