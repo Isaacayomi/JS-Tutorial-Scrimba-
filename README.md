@@ -10,4 +10,3 @@
 - Interacted with the DOM with innerText
 - Interacted with the DOM with textContent
 - Built a passenger counter app as the final project of this first section
-- 
