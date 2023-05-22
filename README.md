@@ -1,10 +1,13 @@
 ## Documenting My Javascript Journey with Scrimba CEO (A practical introduction)
-# Lesson 1
-- Learnt to use the document.getElementById("").innerText = "text" selector
-- Learnt to create a variable and also used the console.log() tool
-- Learnt basic mathematical operator
-- Learnt about reassignment and increment
-- Learnt how to use the onclick event, and also wrote my first function
-- Learnt about the String data type
-- Built a passenger timer app as the final project for this first lesson
- 
+# SECTION 1 (Recap)
+- Script Tag (learnt about using the inline script tag)
+- Learnt about Variables
+- Learnt about the Number data type and using some mathematical operator 
+- Learnt about the string data type
+- Learnt about the console.log() debugging tool
+- Learnt and wrote my first function
+- Quick introduction to DOM (Document Object Model)
+- Interacted with the DOM with innerText
+- Interacted with the DOM with textContent
+- Built a passenger counter app as the final project of this first section
+- 

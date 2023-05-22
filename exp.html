@@ -13,14 +13,23 @@
 </body>
 
 <script>
-    let welcomeEl = document.getElementById("welcome-el");
-    let name = "Prime", greetings = "Welcome Back ";
+ let myPoints = 3;
 
-    welcomeEl.innerText = greetings + name;
+ function add3Points(){
+    myPoints += 3;
+    console.log(myPoints);
+ }
 
-    welcomeEl.innerText += " hi"
-    
+ function remove1Point(){
+    myPoints -= 1;
+    console.log(myPoints);
+ }
 
+ add3Points()
+ add3Points()
+ add3Points()
 
+ remove1Point()
+ remove1Point()
 </script>
 </html>

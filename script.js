@@ -92,42 +92,6 @@ let lap3 = 36;
 // increase();
 
 
-// INCREMENT AND DECREMENT ON CLICK FOR THE SUBWAY COUNTER APP (1ST PROJECT)
-let count = 0;
-function increment(){
-    count ++;
-    document.getElementById("count-el").innerText = count;
-}
-
-function decrement(){
-    count --;
-    document.getElementById("count-el").innerText = count;
-}
-
-let saveEl = document.getElementById("save-el");
-function save(){
-    let dashCount = count + " - ";
-    saveEl.innerText += dashCount;
-}
-
-function clearVal(){
-    count = 0;
-    document.getElementById("count-el").innerText = count;
-}
-
-
-
-
-// let saveEl = document.getElementById("count-el").innerText
-// function save(){
-//     saveEl = count;
-//     document.getElementById("save-el").innerText = "Previous entries:" + saveEl;
-
-// }
-
-
-
-
 // QUICK EXPLANATION ABOUT DOM (Dcoument Object Model)
 // It's just how you use javascript to modify a website
 
@@ -149,3 +113,31 @@ function clearVal(){
 // let greetings = "Welcome "
 
 // welcomeEl.innerText = greetings + name;
+
+// INCREMENT AND DECREMENT ON CLICK FOR THE SUBWAY COUNTER APP (1ST PROJECT)
+let count = 0;
+function increment(){
+    count ++
+    document.getElementById("count-el").innerText = count;
+}
+
+function decrement(){
+    count --
+    document.getElementById("count-el").innerText = count;
+}
+
+function save(){
+    let saveElement = document.getElementById("save-el");
+    let countDash = count + " - ";
+    saveElement.textContent += countDash;
+
+    count = 0;
+    document.getElementById("count-el").innerText = 0;
+}
+
+function clearVal(){
+    count = 0;
+    document.getElementById("count-el").innerText = count;
+
+    document.getElementById("save-el").innerText = "Previous entries:" + count;
+}

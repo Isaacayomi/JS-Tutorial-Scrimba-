@@ -25,4 +25,9 @@ button{
     border-radius:0.2rem;
     border:none;
     margin-top:1rem;
+    transition:.4s ease-in-out;
+}
+
+button:active{
+    transform: scale(1.04);
 }
