@@ -21,6 +21,7 @@
 
 // // count can be reassigned by;
 // count = 16;
+// console.log(count);
 // // 16 would be logged back to the console
 
 // // to increment,
@@ -143,3 +144,7 @@ function clearVal(){
 
     document.getElementById("save-el").innerText = "Previous entries:" + count;
 }
+// PASSENGER COUNTER APP COMPLETED
+
+
+// BASIC PROJECT LEARNT BEFORE PROJECT 2()

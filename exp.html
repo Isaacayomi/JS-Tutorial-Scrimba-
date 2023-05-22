@@ -5,31 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <p id="welcome-el">
 
-    </p>
+</head>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        height:100vh;
+        display:grid;
+        place-content: center;
+    }
+
+ span{
+    text-decoration:underline;
+    font-size:1.8rem;
+ }
+</style>
+
+<body>
+    <span id="num-el-1"></span>
+    <span id="num-el-2"></span>
+    <br>
+    <button onclick="addFunc()">Add</button>
+    <button onclick="subFunc()">Subtract</button>
+    <button onclick="mulFunc()">Multiply</button>
+    <button onclick="divFunc()">Divide</button>
+    <br>
+
+    <p id="total-el">Total: </p>
 </body>
 
 <script>
- let myPoints = 3;
+    // A BASIC JAVASCRIPT CALCULATOR
+    let num1 = 8;
+    let num2 = 2;
 
- function add3Points(){
-    myPoints += 3;
-    console.log(myPoints);
- }
+    document.getElementById("num-el-1").textContent = num1;
+    document.getElementById("num-el-2").textContent = num2;
 
- function remove1Point(){
-    myPoints -= 1;
-    console.log(myPoints);
- }
+    let totalResult = document.getElementById("total-el");
+    function addFunc(){
+        let add = num1 + num2;
+        totalResult.innerText = "Total: " + add;
+    }
 
- add3Points()
- add3Points()
- add3Points()
+    function subFunc(){
+        let sub = num1 - num2;
+        totalResult.innerText = "Total: " + sub;
+    }
+    
+    
 
- remove1Point()
- remove1Point()
+
 </script>
 </html>
