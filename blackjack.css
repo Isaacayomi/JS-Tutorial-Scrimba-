@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:green;
+}
+
+body{
+    display:grid;
+    height:100vh;
+    place-content:center;
+}
+
+h1{
+    color: goldenrod;
+    text-align:center;
+}
+
+p{
+    text-align:center;
+    margin-block:1rem;
+    color:white;
+}
+
+#message-el{
+    font-style:italic;
+}
+
+button{
+    padding:0.6rem;
+    background-color:goldenrod;
+    border:3px solid #016f32;
+    box-shadow:1px 1px 5px #016f32;
+    color:#016f32;
+    border-radius:0.5rem;
+    width:150px;
+    font-weight:bolder;
+    text-transform: uppercase;
+}

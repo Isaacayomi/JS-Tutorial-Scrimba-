@@ -118,31 +118,105 @@
 // welcomeEl.innerText = greetings + name;
 
 // INCREMENT AND DECREMENT ON CLICK FOR THE SUBWAY COUNTER APP (1ST PROJECT)
-let count = 0;
-function increment(){
-    count ++
-    document.getElementById("count-el").innerText = count;
-}
+// let count = 0;
+// function increment(){
+//     count ++
+//     document.getElementById("count-el").innerText = count;
+// }
 
-function decrement(){
-    count --
-    document.getElementById("count-el").innerText = count;
-}
+// function decrement(){
+//     count --
+//     document.getElementById("count-el").innerText = count;
+// }
 
-function save(){
-    let saveElement = document.getElementById("save-el");
-    saveElement.textContent = saveElement.textContent + count + " - ";
+// function save(){
+//     let saveElement = document.getElementById("save-el");
+//     saveElement.textContent = saveElement.textContent + count + " - ";
 
-    count = 0;
-    document.getElementById("count-el").textContent = count;
-}
+//     count = 0;
+//     document.getElementById("count-el").textContent = count;
+// }
 
-function clearVal(){
-    count = 0;
-    document.getElementById("count-el").textContent = count;
-    document.getElementById("save-el").textContent = "Previous entries: " ;
-}
+// function clearVal(){
+//     count = 0;
+//     document.getElementById("count-el").textContent = count;
+//     document.getElementById("save-el").textContent = "Previous entries: " ;
+// }
 // PASSENGER COUNTER APP COMPLETED
 
 
-// BASIC PROJECT LEARNT BEFORE PROJECT 2()
+//BUILDING A BLACK JACK GAME(LESSONS LEARNT BEFORE PROJECT)
+// let firstCard = 2;
+// let secondCard = 19;
+// let sum = firstCard + secondCard;
+
+// // USING THE ELSEIF STATEMENT
+// if (sum < 21){
+//     console.log("do you want to draw a new Card?");
+// } else if(sum === 21){
+//     console.log("Whooo, you got blackjack!"); 
+// } else{
+//     console.log("you're are out of the game");
+// }
+
+
+// WRITING MY FIRST IF-ESLE STATEMENT
+// A program to check if a person is old enough to enter a nightclub(age limit is 21)
+//  let age = 21;
+
+//  if(age <= 21){
+//     console.log("You can not enter the club!");
+//  } else{
+//     console.log("Welcome!");
+//  }
+
+// Check if the person is elegible for a birthday card from the king (age limit is 100)
+// let age = 100;
+// if (age < 100){
+//     console.log("Not elegible")
+// } else if (age === 100){
+//     console.log("Here is your birthday card from the King!")
+// } else{
+//     console.log("Not eligible, you have already gotten one!")
+// }
+
+
+// let firstCard = 10;
+// let secondCard = 11;
+// let sum = firstCard + secondCard;
+// let isAlive = false;
+
+// if (sum <= 20){
+//     console.log("Do you want to draw a new card?")
+// } else if (sum === 21){
+//     console.log("Hurrayy!, You've got a blackJack!")
+//     isAlive = true;
+// } else{
+//     console.log("Oops, You are out of the game")
+// }
+
+// CASH OUT
+// console.log(isAlive);
+
+
+// PRACTICING BOOLEAN
+
+let firstCard = 10;
+let secondCard = 1;
+let sum = firstCard + secondCard;
+let hasBlackJack = false;
+let isAlive = false;
+let message = " ";
+
+function startGame(){
+    if (sum <= 20){
+        message = "Do you want to draw a new card?";
+    } else if (sum === 21){
+        message = "Hurrayy!, You've got a blackJack!"
+        isAlive = true;
+    } else{
+        message = "Oops, You are out of the game";
+    }
+
+    console.log(message);
+}
