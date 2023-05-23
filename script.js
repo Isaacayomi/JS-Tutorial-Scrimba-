@@ -131,18 +131,16 @@ function decrement(){
 
 function save(){
     let saveElement = document.getElementById("save-el");
-    let countDash = count + " - ";
-    saveElement.textContent += countDash;
+    saveElement.textContent = saveElement.textContent + count + " - ";
 
     count = 0;
-    document.getElementById("count-el").innerText = 0;
+    document.getElementById("count-el").textContent = count;
 }
 
 function clearVal(){
     count = 0;
-    document.getElementById("count-el").innerText = count;
-
-    document.getElementById("save-el").innerText = "Previous entries:" + count;
+    document.getElementById("count-el").textContent = count;
+    document.getElementById("save-el").textContent = "Previous entries: " ;
 }
 // PASSENGER COUNTER APP COMPLETED
 

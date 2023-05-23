@@ -1,5 +1,5 @@
 ## Documenting My Javascript Journey with Scrimba CEO (A practical introduction)
-# SECTION 1 (Recap)
+# SECTION 1 (RECAP)
 - Script Tag (learnt about using the inline script tag)
 - Learnt about Variables
 - Learnt about the Number data type and using some mathematical operator 
@@ -10,3 +10,6 @@
 - Interacted with the DOM with innerText
 - Interacted with the DOM with textContent
 - Built a passenger counter app as the final project of this first section
+
+## BUILDING A BLACKJACK
+# SECTION 2 (Recap)
