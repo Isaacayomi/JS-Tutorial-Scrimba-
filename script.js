@@ -200,23 +200,37 @@
 
 
 // PRACTICING BOOLEAN
-
-let firstCard = 10;
+let firstCard = 5;
 let secondCard = 1;
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = false;
 let message = " ";
+let messageEl = document.getElementById("message-el");
+let sumEl = document.querySelector("#sum-el");
+let cardEl = document.querySelector("#card-el");
+let newMsg = "Drawing a new card from the deck"
 
 function startGame(){
+
+    cardEl.textContent = "Card: " + firstCard + " " + secondCard; 
+    sumEl.textContent = "Sum: " + sum;
+
     if (sum <= 20){
         message = "Do you want to draw a new card?";
     } else if (sum === 21){
-        message = "Hurrayy!, You've got a blackJack!"
+        message = "You've got a blackJack!"
         isAlive = true;
     } else{
-        message = "Oops, You are out of the game";
+        message = "You are out of the game";
     }
 
-    console.log(message);
+    messageEl.textContent = message;
 }
+
+let newCardMsg = document.querySelector("#message-el");
+function newCard(){
+    newCardMsg.textContent = newMsg
+}
+
+// stopped at 2:22:24
