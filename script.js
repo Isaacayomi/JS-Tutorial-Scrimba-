@@ -162,15 +162,46 @@
 // console.log("Not eligible, you have already gotten one");
 
 // BACK TO OUR BLACK JACK GAME
+// let firstCard = 10;
+// let secondCard = 11;
+// let sum = firstCard + secondCard;
+// let hasBlackJack = false;
+// let isAlive = false;
+
+// if (sum <= 20){
+//     console.log("Do you want to draw a new card?")
+//     isAlive = false
+// } else if (sum === 21){
+//     console.log("You've gotten a black jack")
+//     isAlive = true
+// } else {
+//     console.log("You are out of the game!")
+// };
+
+
+// console.log(isAlive);
+
+
 let firstCard = 10;
-let secondCard = 12;
+let secondCard = 5;
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
+let isAlive = true;
+let message = " ";
+let messageEl = document.querySelector("#message-el");
+let sumEl = document.querySelector("#sum-el");
 
-if (sum <= 20){
-    console.log("Do you want to draw a new card?")
-} else if (sum === 21){
-    console.log("You've gotten a black jack")
-} else {
-    console.log("You are out of the game!")
+
+function startGame(){
+    if (sum <= 20){
+        message = "Do you want to draw a new card?"
+    } else if (sum === 21){
+        message = "You've got a blackjack!"
+    } else {
+        message = "You're out of the game!"
+    }
+    messageEl.textContent = message
 };
+
+
+    
