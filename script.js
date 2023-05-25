@@ -206,13 +206,12 @@ let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = false;
 let message = " ";
-let messageEl = document.getElementById("message-el");
+let messageEl = document.querySelector("#message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardEl = document.querySelector("#card-el");
 let newMsg = "Drawing a new card from the deck"
 
 function startGame(){
-
     cardEl.textContent = "Card: " + firstCard + " " + secondCard; 
     sumEl.textContent = "Sum: " + sum;
 
@@ -228,9 +227,5 @@ function startGame(){
     messageEl.textContent = message;
 }
 
-let newCardMsg = document.querySelector("#message-el");
-function newCard(){
-    newCardMsg.textContent = newMsg
-}
 
 // stopped at 2:22:24
