@@ -144,101 +144,33 @@
 // }
 // PASSENGER COUNTER APP COMPLETED
 
+// BUILDING A BLACK JACK GAME
+// (LESSONS BEFORE PROJECT PHASE)
+// let age = 30;
 
-//BUILDING A BLACK JACK GAME(LESSONS LEARNT BEFORE PROJECT)
-// let firstCard = 2;
-// let secondCard = 19;
-// let sum = firstCard + secondCard;
-
-// // USING THE ELSEIF STATEMENT
-// if (sum < 21){
-//     console.log("do you want to draw a new Card?");
-// } else if(sum === 21){
-//     console.log("Whooo, you got blackjack!"); 
-// } else{
-//     console.log("you're are out of the game");
-// }
-
-
-// WRITING MY FIRST IF-ESLE STATEMENT
-// A program to check if a person is old enough to enter a nightclub(age limit is 21)
-//  let age = 21;
-
-//  if(age <= 21){
-//     console.log("You can not enter the club!");
-//  } else{
-//     console.log("Welcome!");
-//  }
-
-// Check if the person is elegible for a birthday card from the king (age limit is 100)
+// if (age <= 21){
+//     console.log("You cannot enter the club!")
+// } else 
+// console.log("Welcome");
+// A code to check if person is eligible for a birthday card from the king if they're 100 and above.
 // let age = 100;
 // if (age < 100){
-//     console.log("Not elegible")
-// } else if (age === 100){
+//     console.log("Not eligible") 
+// } else if(age === 100){
 //     console.log("Here is your birthday card from the King!")
-// } else{
-//     console.log("Not eligible, you have already gotten one!")
-// }
+// } else
+// console.log("Not eligible, you have already gotten one");
 
-
-// let firstCard = 10;
-// let secondCard = 11;
-// let sum = firstCard + secondCard;
-// let isAlive = false;
-
-// if (sum <= 20){
-//     console.log("Do you want to draw a new card?")
-// } else if (sum === 21){
-//     console.log("Hurrayy!, You've got a blackJack!")
-//     isAlive = true;
-// } else{
-//     console.log("Oops, You are out of the game")
-// }
-
-// CASH OUT
-// console.log(isAlive);
-
-
-// PRACTICING BOOLEAN
-let firstCard = 5;
-let secondCard = 1;
+// BACK TO OUR BLACK JACK GAME
+let firstCard = 10;
+let secondCard = 12;
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
-let isAlive = false;
-let message = " ";
-let messageEl = document.querySelector("#message-el");
-let sumEl = document.querySelector("#sum-el");
-let cardEl = document.querySelector("#card-el");
-let newMsg = "Drawing a new card from the deck"
 
-
-function startGame(){
-    renderGame();
-} 
-
-function renderGame(){
-    cardEl.textContent = "Card: " + firstCard + " " + secondCard; 
-    sumEl.textContent = "Sum: " + sum;
-
-    if (sum <= 20){
-        message = "Do you want to draw a new card?";
-    } else if (sum === 21){
-        message = "You've got a blackJack!"
-        isAlive = true;
-    } else{
-        message = "You are out of the game";
-    }
-
-    messageEl.textContent = message;
-}
-
-
-
-function newCard(){
-    console.log(newMsg);
-    let card = 5;
-    sum = sum + card; 
-    renderGame();
-}
-
-
+if (sum <= 20){
+    console.log("Do you want to draw a new card?")
+} else if (sum === 21){
+    console.log("You've gotten a black jack")
+} else {
+    console.log("You are out of the game!")
+};
