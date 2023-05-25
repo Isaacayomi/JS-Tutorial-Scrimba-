@@ -211,7 +211,12 @@ let sumEl = document.querySelector("#sum-el");
 let cardEl = document.querySelector("#card-el");
 let newMsg = "Drawing a new card from the deck"
 
+
 function startGame(){
+    renderGame();
+} 
+
+function renderGame(){
     cardEl.textContent = "Card: " + firstCard + " " + secondCard; 
     sumEl.textContent = "Sum: " + sum;
 
@@ -228,4 +233,12 @@ function startGame(){
 }
 
 
-// stopped at 2:22:24
+
+function newCard(){
+    console.log(newMsg);
+    let card = 5;
+    sum = sum + card; 
+    renderGame();
+}
+
+
