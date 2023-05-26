@@ -184,13 +184,13 @@
 
 let firstCard = 10;
 let secondCard = 5;
-let CardEl = document.querySelector("#card-el");
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
 let message = " ";
 let messageEl = document.querySelector("#message-el");
 let sumEl = document.querySelector("#sum-el");
+let CardEl = document.querySelector("#card-el");
 
 
 function startGame(){
