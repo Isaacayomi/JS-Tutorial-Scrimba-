@@ -184,6 +184,7 @@
 
 let firstCard = 10;
 let secondCard = 5;
+let CardEl = document.querySelector("#card-el");
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
@@ -193,6 +194,8 @@ let sumEl = document.querySelector("#sum-el");
 
 
 function startGame(){
+sumEl.textContent = "Sum: " + sum;
+CardEl.textContent = "Cards: " + firstCard + " " + secondCard;
     if (sum <= 20){
         message = "Do you want to draw a new card?"
     } else if (sum === 21){
@@ -203,5 +206,6 @@ function startGame(){
     messageEl.textContent = message
 };
 
+// STOPPED AT 2:14:15
 
     
