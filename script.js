@@ -182,18 +182,19 @@
 // console.log(isAlive);
 
 
-let firstCard = 10;
-let secondCard = 5;
+let firstCard = 16; //Here, i hard coded the value of the first card
+let secondCard = 5; // and also the value of the second card
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
-let message = " ";
+let message = " "; //Created a message variable
 let messageEl = document.querySelector("#message-el");
 let sumEl = document.querySelector("#sum-el");
 let CardEl = document.querySelector("#card-el");
 
 
-function startGame(){
+// RENDERING OUT THE CURRENT STATE OF THE GAME.
+function renderGame(){
 sumEl.textContent = "Sum: " + sum;
 CardEl.textContent = "Cards: " + firstCard + " " + secondCard;
     if (sum <= 20){
@@ -206,6 +207,14 @@ CardEl.textContent = "Cards: " + firstCard + " " + secondCard;
     messageEl.textContent = message
 };
 
-// STOPPED AT 2:14:15
+function startGame(){
+    renderGame();
+}
 
+// CREATING A NEW CARD FUNCTION AND RENDERING THE SUM TO THE SUM VARIABLE
+function newCard(){
+    let newCard = 8;
+    sum += newCard;
+    document.querySelector("#message-el").textContent = "Drawing a new card from the deck"
+}
     
