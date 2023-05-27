@@ -194,6 +194,9 @@ let CardEl = document.querySelector("#card-el");
 
 
 // RENDERING OUT THE CURRENT STATE OF THE GAME.
+function startGame(){
+    renderGame();
+}
 function renderGame(){
 sumEl.textContent = "Sum: " + sum;
 CardEl.textContent = "Cards: " + firstCard + " " + secondCard;
@@ -207,14 +210,10 @@ CardEl.textContent = "Cards: " + firstCard + " " + secondCard;
     messageEl.textContent = message
 };
 
-function startGame(){
-    renderGame();
-}
-
 // CREATING A NEW CARD FUNCTION AND RENDERING THE SUM TO THE SUM VARIABLE
 function newCard(){
     let newCard = 8;
     sum += newCard;
-    document.querySelector("#message-el").textContent = "Drawing a new card from the deck"
+    renderGame();
 }
-    
+// INTRODUCTION TO ARRAY
