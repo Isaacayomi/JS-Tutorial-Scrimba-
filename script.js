@@ -182,8 +182,9 @@
 // console.log(isAlive);
 
 
-let firstCard = 16; //Here, i hard coded the value of the first card
+let firstCard = 5; //Here, i hardcoded the value of the first card
 let secondCard = 5; // and also the value of the second card
+let cards = [firstCard, secondCard] //Arry-ordered list of items
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
 let isAlive = true;
@@ -199,7 +200,7 @@ function startGame(){
 }
 function renderGame(){
 sumEl.textContent = "Sum: " + sum;
-CardEl.textContent = "Cards: " + firstCard + " " + secondCard;
+CardEl.textContent = "Cards: " + cards[0] + " " + cards[1];
     if (sum <= 20){
         message = "Do you want to draw a new card?"
     } else if (sum === 21){
@@ -212,7 +213,7 @@ CardEl.textContent = "Cards: " + firstCard + " " + secondCard;
 
 // CREATING A NEW CARD FUNCTION AND RENDERING THE SUM TO THE SUM VARIABLE
 function newCard(){
-    let newCard = 8;
+    let newCard = 8; //Here also, i hardcoded the value of the newCard
     sum += newCard;
     renderGame();
 }
